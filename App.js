@@ -8,7 +8,7 @@ export default class App extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <GameView></GameView>
+                <GameView display="helloee"></GameView>
             </View>
 
         )
@@ -29,3 +29,5 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     }
 });
+
+

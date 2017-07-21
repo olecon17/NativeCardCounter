@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
+import Deck from './Deck';
 
 export default class PlayerView extends React.Component{
     render() {
@@ -13,6 +14,7 @@ export default class PlayerView extends React.Component{
     }
     componentDidMount() {
     console.log("player mount");
+    console.log(Deck.createDeck(1));
     }
 };
 

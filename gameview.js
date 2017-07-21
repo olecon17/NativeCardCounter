@@ -5,15 +5,17 @@ import PlayerView from "./playerView";
 import SettingsView from "./settingsView";
 
 export default class GameView extends React.Component {
+
     render() {
         return (
         <View style={styles.container}>
-            <SettingsView/>
+            <SettingsView text={this.props.display} />
             <DealerView/>
             <PlayerView/>
         </View>
         )
     }
+
 }
 
 const styles = StyleSheet.create({
